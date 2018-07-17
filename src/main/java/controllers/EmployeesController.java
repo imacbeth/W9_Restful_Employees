@@ -66,14 +66,6 @@ public class EmployeesController {
 
 
 
-
-
-
-
-
-
-
-
             post("/employees/:id", (req, res) -> {
 
                 int departmentId = Integer.parseInt(req.queryParams("department"));
@@ -97,7 +89,15 @@ public class EmployeesController {
                 return null;
             }, new VelocityTemplateEngine());
 
+            post("/employees/:id/delete", (req, res) -> {
+                int employeeId = Integer.parseInt(req.params(":id"));
+                Employee employee = DBHelper.find(employeeId, Employee.class);
+                DBHelper.delete(employee);
 
+                res.redirect("/employees");
+
+                return null;
+            }, new VelocityTemplateEngine());
 
 
 

@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b5be87a-cf30-4ab0-8f6a-df04843fc51a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/employees/edit.vtl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controllers/EmployeesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/EmployeesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/employees/index.vtl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/employees/index.vtl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/employees/show.vtl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/employees/show.vtl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/employees/index.vtl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/employees/index.vtl" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,8 +20,8 @@
       <file leaf-file-name="EmployeesController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controllers/EmployeesController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="59" column="54" selection-start-line="59" selection-start-column="54" selection-end-line="59" selection-end-column="54" />
+            <state relative-caret-position="407">
+              <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#342#343#0" expanded="true" />
@@ -37,7 +34,7 @@
       <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controllers/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
+            <state relative-caret-position="390">
               <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -46,20 +43,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.vtl" pinned="false" current-in-tab="false">
+      <file leaf-file-name="show.vtl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/employees/show.vtl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="19" column="68" selection-end-line="30" selection-end-column="6" />
+            <state relative-caret-position="312">
+              <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.vtl" pinned="false" current-in-tab="true">
+      <file leaf-file-name="edit.vtl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/employees/edit.vtl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="89">
+              <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -85,8 +82,8 @@
       <file leaf-file-name="ManagersController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controllers/ManagersController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="42" selection-start-line="42" selection-end-line="43" selection-end-column="46" />
+            <state relative-caret-position="283">
+              <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="74" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -155,10 +152,10 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/departments/create.vtl" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/DepartmentsController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/employees/index.vtl" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/employees/show.vtl" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/ManagersController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controllers/EmployeesController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/employees/edit.vtl" />
+        <option value="$PROJECT_DIR$/src/main/java/controllers/EmployeesController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/employees/show.vtl" />
       </list>
     </option>
   </component>
@@ -435,7 +432,21 @@
       <option name="project" value="LOCAL" />
       <updated>1531839820429</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="can edit an employee">
+      <created>1531840623509</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1531840623509</updated>
+    </task>
+    <task id="LOCAL-00004" summary="can edit and update an employee">
+      <created>1531841120267</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1531841120268</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -444,7 +455,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.3289256" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32848486" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="9" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
@@ -482,7 +493,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="department controller and all departments index" />
     <MESSAGE value="can show one employee" />
-    <option name="LAST_COMMIT_MESSAGE" value="can show one employee" />
+    <MESSAGE value="can edit an employee" />
+    <MESSAGE value="can edit and update an employee" />
+    <option name="LAST_COMMIT_MESSAGE" value="can edit and update an employee" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -772,16 +785,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/managers/create.vtl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -796,13 +799,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/employees/show.vtl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="19" column="68" selection-end-line="30" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/managers/index.vtl">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -812,8 +808,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controllers/ManagersController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="42" selection-start-line="42" selection-end-line="43" selection-end-column="46" />
+        <state relative-caret-position="283">
+          <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -822,8 +828,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controllers/EmployeesController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="59" column="54" selection-start-line="59" selection-start-column="54" selection-end-line="59" selection-end-column="54" />
+        <state relative-caret-position="407">
+          <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#342#343#0" expanded="true" />
@@ -834,8 +840,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/employees/edit.vtl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="89">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/employees/show.vtl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
         </state>
       </provider>
     </entry>

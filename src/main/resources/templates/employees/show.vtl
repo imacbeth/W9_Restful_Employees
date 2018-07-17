@@ -18,6 +18,10 @@
             <td>$employee.getSalary()</td>
             <td>$employee.getDepartment().getTitle()</td>
             <td><a href="/employees/$employee.getId()/edit">EDIT</a></td>
+<td>
+            <form action="/employees/$employee.getId()/delete" method="post">
+            <input type="submit" value="DELETE"></form>
+</td>
         </tr>
 
 
