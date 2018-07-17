@@ -22,7 +22,7 @@ public class Controller {
 
         ManagersController managersController = new ManagersController();
         EmployeesController employeesController = new EmployeesController();
-
+        DepartmentsController departmentsController = new DepartmentsController();
 
 
         get("/",(req, res) -> {
