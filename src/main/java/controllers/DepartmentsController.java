@@ -40,8 +40,7 @@ public class DepartmentsController {
             model.put("departments", departments);
             model.put("template", "templates/departments/create.vtl");
 
-//        List<Manager> departments = DBHelper.getAll(Manager.class);
-//        model.put("departments", departments);
+
             return new ModelAndView(model, "templates/layout.vtl");
 
         }, new VelocityTemplateEngine());

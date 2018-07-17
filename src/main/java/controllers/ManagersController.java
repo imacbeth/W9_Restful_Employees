@@ -113,6 +113,7 @@ public class ManagersController {
             manager.setLastName(lastName);
             manager.setSalary(salary);
             manager.setDepartment(department);
+            manager.setBudget(budget);
             DBHelper.save(manager);
 
             res.redirect("/managers");
@@ -131,7 +132,6 @@ public class ManagersController {
 
             return null;
         }, new VelocityTemplateEngine());
-
 
     }
 
