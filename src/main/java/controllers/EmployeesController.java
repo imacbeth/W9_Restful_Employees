@@ -5,6 +5,7 @@ import db.DBHelper;
 import db.Seeds;
 import models.Department;
 import models.Employee;
+import models.Manager;
 import spark.ModelAndView;
 import spark.template.velocity.VelocityTemplateEngine;
 
@@ -13,6 +14,7 @@ import java.util.List;
 import java.util.Map;
 
 import static spark.Spark.get;
+import static spark.Spark.post;
 
 public class EmployeesController {
 
@@ -61,6 +63,61 @@ public class EmployeesController {
                 return new ModelAndView(model, "templates/layout.vtl");
 
             }, new VelocityTemplateEngine());
+
+
+
+
+
+
+
+
+
+
+
+            post("/employees/:id", (req, res) -> {
+
+                int departmentId = Integer.parseInt(req.queryParams("department"));
+                Department department = DBHelper.find(departmentId, Department.class);
+                int employeeId = Integer.parseInt(req.params(":id"));
+                String firstName = req.queryParams("firstName");
+                String lastName = req.queryParams("lastName");
+                int salary = Integer.parseInt(req.queryParams("salary"));
+
+                Employee employee = DBHelper.find(employeeId, Employee.class);
+
+
+                employee.setFirstName(firstName);
+                employee.setLastName(lastName);
+                employee.setSalary(salary);
+                employee.setDepartment(department);
+                DBHelper.save(employee);
+
+                res.redirect("/employees");
+
+                return null;
+            }, new VelocityTemplateEngine());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         }
 
