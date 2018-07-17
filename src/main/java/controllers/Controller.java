@@ -25,15 +25,5 @@ public class Controller {
         DepartmentsController departmentsController = new DepartmentsController();
 
 
-        get("/",(req, res) -> {
-
-            Map<String, Object> model = new HashMap();
-            model.put("template", "templates/index.vtl");
-            return new ModelAndView(model, "templates/layout.vtl");
-        }, new VelocityTemplateEngine());
-
-
-
-
     }
 }

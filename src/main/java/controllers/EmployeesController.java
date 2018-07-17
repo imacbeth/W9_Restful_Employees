@@ -25,8 +25,6 @@ public class EmployeesController {
 
         public void setupEndPoints() {
 
-            // when you do this first time you gotta click on the red light bulb that comes and select the
-            // option that makes this accept lambdas
             get("/employees", (req, res) -> {
 
                 Map<String, Object> model = new HashMap();
@@ -42,6 +40,7 @@ public class EmployeesController {
             get("/employees/:id", (request, response) -> {
 
                 Map<String, Object> model = new HashMap<>();
+
                 model.put("template", "templates/employees/show.vtl");
                 int employeeId = Integer.parseInt(request.params(":id"));
                 Employee employee = DBHelper.find(employeeId, Employee.class);
