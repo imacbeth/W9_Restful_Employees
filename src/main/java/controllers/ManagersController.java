@@ -109,7 +109,6 @@ public class ManagersController {
 
             Manager manager = DBHelper.find(managerId, Manager.class);
 
-
             manager.setFirstName(firstName);
             manager.setLastName(lastName);
             manager.setSalary(salary);
@@ -123,6 +122,16 @@ public class ManagersController {
 
 
 //      delete
+        post("/managers/:id/delete", (req, res) -> {
+            int managerId = Integer.parseInt(req.params(":id"));
+            Manager manager = DBHelper.find(managerId, Manager.class);
+            DBHelper.delete(manager);
+
+            res.redirect("/managers");
+
+            return null;
+        }, new VelocityTemplateEngine());
+
 
     }
 
