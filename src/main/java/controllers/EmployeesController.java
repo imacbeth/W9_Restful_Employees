@@ -3,6 +3,7 @@ package controllers;
 
 import db.DBHelper;
 import db.Seeds;
+import models.Department;
 import models.Employee;
 import spark.ModelAndView;
 import spark.template.velocity.VelocityTemplateEngine;
@@ -43,6 +44,20 @@ public class EmployeesController {
                 int employeeId = Integer.parseInt(request.params(":id"));
                 Employee employee = DBHelper.find(employeeId, Employee.class);
                 model.put("employee", employee);
+                return new ModelAndView(model, "templates/layout.vtl");
+
+            }, new VelocityTemplateEngine());
+
+
+            get("/employees/:id/edit", (request, response) -> {
+
+                Map<String, Object> model = new HashMap<>();
+                model.put("template", "templates/employees/edit.vtl");
+                int employeeId = Integer.parseInt(request.params(":id"));
+                Employee employee = DBHelper.find(employeeId, Employee.class);
+                model.put("employee", employee);
+                List<Department> departments = DBHelper.getAll(Department.class);
+                model.put("departments", departments);
                 return new ModelAndView(model, "templates/layout.vtl");
 
             }, new VelocityTemplateEngine());

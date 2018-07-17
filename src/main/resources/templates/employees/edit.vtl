@@ -1,0 +1,40 @@
+<h1>Edit Employee</h1>
+
+
+<div>
+
+
+        <form action="/employees/$employee.getId()" method="post">
+            <label for="first-name">First Name</label>
+            <input type="text" id ="first-name" name="firstName" value="$employee.getFirstName()" required>
+
+            <label for="last-name">Last Name</label>
+            <input type="text" id ="last-name" name="lastName" value="$employee.getLastName()" required>
+
+
+            <label for="salary">Salary</label>
+            <input type="number" min="0" id ="salary" name="salary" value="$employee.getSalary()" required>
+
+
+            <label for="department">Department</label>
+            <select name="department" id="department">
+                #foreach ( $department in $departments )
+                <option value="$department.getId()">$department.getTitle()</option>
+                #end
+            </select>
+
+            <input type="submit" value="Save">
+
+        </form>
+
+
+
+
+
+
+
+
+
+
+
+</div>
