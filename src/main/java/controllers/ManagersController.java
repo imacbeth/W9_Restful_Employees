@@ -97,6 +97,30 @@ public class ManagersController {
 
 //      update
 
+        post("/managers/:id", (req, res) -> {
+
+            int departmentId = Integer.parseInt(req.queryParams("department"));
+            Department department = DBHelper.find(departmentId, Department.class);
+            int managerId = Integer.parseInt(req.params(":id"));
+            String firstName = req.queryParams("firstName");
+            String lastName = req.queryParams("lastName");
+            int salary = Integer.parseInt(req.queryParams("salary"));
+            double budget = Double.parseDouble(req.queryParams("budget"));
+
+            Manager manager = DBHelper.find(managerId, Manager.class);
+
+
+            manager.setFirstName(firstName);
+            manager.setLastName(lastName);
+            manager.setSalary(salary);
+            manager.setDepartment(department);
+            DBHelper.save(manager);
+
+            res.redirect("/managers");
+
+            return null;
+        }, new VelocityTemplateEngine());
+
 
 //      delete
 

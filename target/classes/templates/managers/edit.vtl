@@ -1,0 +1,29 @@
+<h1>Edit Manager</h1>
+
+<div>
+    <form action="/managers/$manager.getId()" method="post">
+        <label for="first-name">First Name</label>
+        <input type="text" id ="first-name" name="firstName" value="$manager.getFirstName()" required>
+
+        <label for="last-name">Last Name</label>
+        <input type="text" id ="last-name" name="lastName" value="$manager.getLastName()" required>
+
+
+        <label for="salary">Salary</label>
+        <input type="number" min="0" id ="salary" name="salary" value="$manager.getSalary()" required>
+
+        <label for="budget">Budget</label>
+        <input type="number" min="0" id ="budget" name="budget" value="$manager.getBudget()" required>
+
+        <label for="department">Department</label>
+        <select name="department" id="department">
+            #foreach ( $department in $departments )
+            <option value="$department.getId()">$department.getTitle()</option>
+            #end
+        </select>
+
+        <input type="submit" value="Save">
+
+    </form>
+
+</div>
